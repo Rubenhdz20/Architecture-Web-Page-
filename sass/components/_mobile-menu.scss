@@ -1,0 +1,91 @@
+.header {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    color: $content-color;
+    background-color: $header-background; 
+
+    h1 {
+        font-family: $title-source;
+    }
+
+    .hamburguer {
+        display: block;
+        color: $content-color;
+        background-color: $header-background;
+        border-radius: 1rem;
+        border: none;
+        cursor: pointer;
+        .svg {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+    }
+
+    .nav { 
+        display: none;
+        width: 100%;
+        pointer-events: none;
+        transition: all .3s;
+        ul {
+            display: flex;
+            flex-direction: column;
+            // flex-flow: row nowrap;
+            justify-content: flex-end;
+            align-items: center;
+            list-style: none;
+            .li {
+                margin: 1rem 0;
+                .link {
+                    font-family: $general-text;
+                    font-size: 1rem;
+                    text-decoration: none;
+                    color: $content-color;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .active { 
+        display: block;
+        pointer-events: auto;
+    }
+}
+
+// @media screen and (max-width:480px){
+//     .header .button{
+//       display: none;
+//       cursor: pointer;
+//     }
+
+//     .header .nav{
+//       width: ;
+//       /* display: none; */
+//       height:0;
+//       pointer-events: none;
+//       overflow: hidden;
+//       transition: all .5s ease;
+//       display: flex;
+//       flex-flow: column nowrap;
+//       justify-content: center;
+//       align-items: center;
+//     }
+
+//     .header .nav.activo{
+//       /* display: block; */
+//       height:50vh;
+//       pointer-events: auto;
+//     }
+
+//     .header .ul{
+//       flex-direction: column;
+//     }
+
+//     .header .li{
+//       margin: 1rem 0;
+//     }
+// }

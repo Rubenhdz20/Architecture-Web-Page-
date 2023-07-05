@@ -1,0 +1,70 @@
+.our-work {
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+    background-color: $main-background;
+
+    h2 {
+        margin-bottom: 2rem;
+        font-family: $title-source;
+        font-size: 2rem;
+        text-align: center;
+        color: $content-color;
+    }
+
+    .carrusel {
+        max-width: 22rem;
+        margin: 0 auto;
+        padding: 2em;
+        border-radius: 1rem;
+        background-color: $secondary-background;
+        overflow: hidden;
+        .grande {
+            width: 400%;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.3em;
+            transition: all .5s ease;
+
+            h3 {
+                padding: .5rem;
+                font-size: 1.2rem;
+                font-family: $title-source;
+                text-align: center;
+                color: $content-color;  
+            }
+
+            img {
+                width: 18rem;
+                height: 18rem;
+                cursor: pointer;
+                border-radius: 1rem;
+            }
+        }
+
+        .puntos {
+            width: 100%;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            margin: 1em 0 0;
+            padding: .4em;
+            list-style: none;
+
+            .punto {
+                width: 2em;
+                height: 2em;
+                margin: .2em;
+                padding: .2rem;
+                background-color: beige;
+                border-radius: 1rem;
+            }
+
+            .activo {
+                background-color: #3a3a3adc;
+            }
+        }
+    }
+}

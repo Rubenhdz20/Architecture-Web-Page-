@@ -1,0 +1,39 @@
+.hero-section {
+    &__background {
+        position: relative;
+    }
+   
+    h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -70%);
+        font-family: $title-source;
+        font-size: 1.7rem;
+        text-align: center;
+        color: $content-color;
+        @include media(tablet) {
+            font-size: 2rem;
+        }
+    }
+
+    &__image {
+        max-width: 100%;
+        height: 49rem;
+
+        @include media(tablet) {
+            height: 56rem;
+        }
+    }
+}
+
+
+    
+
+
+
+
+
+
+
+

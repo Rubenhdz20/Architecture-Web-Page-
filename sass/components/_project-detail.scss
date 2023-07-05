@@ -1,0 +1,48 @@
+.main-container {
+    width: 100%;
+    background-color: $main-background;
+
+    .goback-button {
+        display: inline-block;
+        width: 3rem;
+        height: 3rem;
+        margin-left: 2rem;
+        margin-top: 1.5rem;
+        background-color: $main-background;
+        color: #333;
+        text-decoration: none;
+        border-radius: 2rem;
+    }
+
+    .project-name {
+        margin-top: 5rem;
+        font-family: $title-source;
+        font-size: 1.5rem;
+        text-align: center;
+        text-transform: uppercase;
+        color: $content-color;
+    }
+
+    .description {
+        margin-bottom: 2rem;
+        font-family: $general-text;
+        font-size: 1rem;
+        text-align: center;
+        color: $content-color;
+    }
+
+    .projects-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        place-items: center;
+        gap: 10px;
+        margin-bottom: 2rem;
+        img {
+            width: 17rem;
+            height: 17rem;
+            padding: 1rem;
+            border-radius: 3rem;
+        }
+    }
+}   
+

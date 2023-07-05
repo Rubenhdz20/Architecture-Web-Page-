@@ -1,0 +1,87 @@
+.description {
+    padding-top: 4rem;
+    background-color: $main-background;
+    @include media(tablet) {
+        padding-top: 6rem;
+    }
+
+    &__title {
+        font-family: $title-source;
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        color: $content-color;
+    }
+
+    .image-gallery {
+        position: relative;
+        width: 100%;
+        height: 33rem;    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 7rem;  
+
+        @include media(tablet) {
+            height: 34rem; 
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .image-circle {
+            position: absolute;
+            width: 8rem;
+            height: 8rem;
+            margin: 10px;
+            border-radius: 50%;
+            background-color: #000;
+        }
+
+        .circle1 {
+            top: -6%;
+            left: 32%;
+            @include media(tablet) {
+                top: -6%;
+                left: 40%;
+            }
+        }
+              
+        .circle2 {
+            top: 10%;
+            left: 15%;
+        }
+              
+        .circle3 {
+            top: 11%;
+            left: 45%;
+            @include media(tablet) {
+                top: 11%;
+                left: 47%;
+            }
+        }
+              
+        .circle4 {
+            top: 25%;
+            left: 32%;
+            @include media(tablet) {
+                top: 11%;
+                left: 40%;
+            }
+        }
+    }
+
+    &__text {
+        margin-top: -10rem;
+        padding: 2rem;
+        font-family: $general-text;
+        font-size: 1.3rem;
+        text-align: center;
+        color: $content-color;
+    }
+}
