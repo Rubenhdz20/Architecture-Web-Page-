@@ -1,6 +1,6 @@
 .main-container {
     width: 100%;
-    background-color: $main-background;
+    background-color: #6aa4ef;
 
     .goback-button {
         display: inline-block;
@@ -8,14 +8,13 @@
         height: 3rem;
         margin-left: 2rem;
         margin-top: 1.5rem;
-        background-color: $main-background;
-        color: #333;
+        background-color: #71b1f2;
         text-decoration: none;
         border-radius: 2rem;
     }
 
     .project-name {
-        margin-top: 5rem;
+        margin-top: 3rem;
         font-family: $title-source;
         font-size: 1.5rem;
         text-align: center;
@@ -28,7 +27,8 @@
         font-family: $general-text;
         font-size: 1rem;
         text-align: center;
-        color: $content-color;
+        background-color: #6aa4ef;
+        
     }
 
     .projects-container {
@@ -36,7 +36,6 @@
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         place-items: center;
         gap: 10px;
-        margin-bottom: 2rem;
         img {
             width: 17rem;
             height: 17rem;

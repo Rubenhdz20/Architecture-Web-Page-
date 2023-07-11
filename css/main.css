@@ -242,19 +242,18 @@ main {
 
 .main-container {
   width: 100%;
-  background-color: #fffdfc; }
+  background-color: #6aa4ef; }
   .main-container .goback-button {
     display: inline-block;
     width: 3rem;
     height: 3rem;
     margin-left: 2rem;
     margin-top: 1.5rem;
-    background-color: #fffdfc;
-    color: #333;
+    background-color: #71b1f2;
     text-decoration: none;
     border-radius: 2rem; }
   .main-container .project-name {
-    margin-top: 5rem;
+    margin-top: 3rem;
     font-family: "Roboto Condensed";
     font-size: 1.5rem;
     text-align: center;
@@ -265,13 +264,12 @@ main {
     font-family: "Roboto Flex";
     font-size: 1rem;
     text-align: center;
-    color: #000000; }
+    background-color: #6aa4ef; }
   .main-container .projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     place-items: center;
-    gap: 10px;
-    margin-bottom: 2rem; }
+    gap: 10px; }
     .main-container .projects-container img {
       width: 17rem;
       height: 17rem;
