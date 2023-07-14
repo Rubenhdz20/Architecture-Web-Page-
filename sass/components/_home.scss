@@ -15,6 +15,10 @@
         @include media(tablet) {
             font-size: 2rem;
         }
+
+        @include media(desktop) {
+            top: 34%;
+        }
     }
 
     &__image {
@@ -22,8 +26,16 @@
         height: 49rem;
 
         @include media(tablet) {
-            height: 56rem;
-        }
+            height: 51rem;
+        }  
+
+        @include media(desktop-s) {
+            height: 50rem;
+        }  
+
+        @include media(desktop) {
+            height: 64rem;
+        }  
     }
 }
 

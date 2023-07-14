@@ -14,70 +14,57 @@
     }
 
     .image-gallery {
-        position: relative;
-        width: 100%;
-        height: 33rem;    
+        height: 25rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
-        margin-top: 7rem;  
-
-        @include media(tablet) {
-            height: 34rem; 
-        }
-
         .image-container {
+            position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
+            flex-wrap: wrap;
         }
 
         .image-circle {
-            position: absolute;
-            width: 8rem;
-            height: 8rem;
+            width: 150px;
+            height: 150px;
             margin: 10px;
             border-radius: 50%;
-            background-color: #000;
+            background-color: #ccc;
         }
 
         .circle1 {
-            top: -6%;
-            left: 32%;
-            @include media(tablet) {
-                top: -6%;
-                left: 40%;
-            }
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-51%, -77%);
         }
-              
+          
         .circle2 {
-            top: 10%;
-            left: 15%;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(-2%, -33%);
         }
-              
+          
         .circle3 {
-            top: 11%;
-            left: 45%;
-            @include media(tablet) {
-                top: 11%;
-                left: 47%;
-            }
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(-99%, -33%);
         }
-              
+          
         .circle4 {
-            top: 25%;
-            left: 32%;
-            @include media(tablet) {
-                top: 11%;
-                left: 40%;
-            }
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-51%, 19%);
         }
     }
-
+    
     &__text {
-        margin-top: -10rem;
+        margin-top: 3rem;
         padding: 2rem;
         font-family: $general-text;
         font-size: 1.3rem;
