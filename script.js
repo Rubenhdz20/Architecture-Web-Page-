@@ -2,12 +2,18 @@
 
 'use strict'
 
-const button = document.querySelector('.hamburguer');
-const nav = document.querySelector('.nav');
+// const button = document.querySelector('.hamburguer');
+// const nav = document.querySelector('.nav');
 
-button.addEventListener('click', () => {
-    nav.classList.toggle('active');
-})
+// button.addEventListener('click', () => {
+//     nav.classList.toggle('active');
+// })
+
+document.querySelector('.hamburguer').addEventListener('click', function() {
+    setTimeout(function() {
+        document.querySelector('.nav').classList.toggle('active');
+    }, 100); // 300ms delay for a slow effect
+});
 
 const grande = document.querySelector('.grande');
 const punto = document.querySelectorAll('.punto');
@@ -30,17 +36,3 @@ punto.forEach((cadaPunto, i) => {
         punto[i].classList.add('activo');
     })
 });
-
-// //image change over time within a section of a page,
-
-// let images = ['Fuentes del Molino/IMG_8741.jpeg', 'Fuentes del Molino/IMG_0041.jpeg', 'Fuentes del Molino/IMG_8745.jpeg'];
-// let currentIndex = 0;
-// let interval = 3000;
-
-// function changeImages() {
-//     let imgElement = document.getElementById('changing-image');
-//     imgElement.src = images[currentIndex];
-//     currentIndex = (currentIndex + 1) % images.length;
-// }
-
-// setInterval(changeImages, interval);

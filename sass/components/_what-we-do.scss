@@ -38,10 +38,20 @@
         }
 
         &__description {
+            max-width: 75ch;
             font-family: $general-text;
             font-size: 1rem;
             text-align: center;
             color: $content-color;
+
+            @include media(tablet) {
+                font-size: 1.3rem;
+            } 
         }
+
+        @include media(tablet) {
+            width: 23rem;
+            height: 25rem;
+        } 
     }
 }

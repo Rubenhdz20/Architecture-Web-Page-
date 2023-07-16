@@ -70,5 +70,9 @@
         font-size: 1.3rem;
         text-align: center;
         color: $content-color;
+
+        @include media(tablet) {
+           font-size: 1.5rem;
+        }   
     }
 }

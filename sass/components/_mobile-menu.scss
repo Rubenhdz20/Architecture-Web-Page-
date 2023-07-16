@@ -29,7 +29,8 @@
         display: none;
         width: 100%;
         pointer-events: none;
-        transition: all .3s;
+        transition: all 0.4s ease;
+        opacity: 0;
         ul {
             display: flex;
             flex-direction: column;
@@ -53,39 +54,6 @@
     .active { 
         display: block;
         pointer-events: auto;
+        opacity: 1;
     }
 }
-
-// @media screen and (max-width:480px){
-//     .header .button{
-//       display: none;
-//       cursor: pointer;
-//     }
-
-//     .header .nav{
-//       width: ;
-//       /* display: none; */
-//       height:0;
-//       pointer-events: none;
-//       overflow: hidden;
-//       transition: all .5s ease;
-//       display: flex;
-//       flex-flow: column nowrap;
-//       justify-content: center;
-//       align-items: center;
-//     }
-
-//     .header .nav.activo{
-//       /* display: block; */
-//       height:50vh;
-//       pointer-events: auto;
-//     }
-
-//     .header .ul{
-//       flex-direction: column;
-//     }
-
-//     .header .li{
-//       margin: 1rem 0;
-//     }
-// }
