@@ -2,13 +2,6 @@
 
 'use strict'
 
-// const button = document.querySelector('.hamburguer');
-// const nav = document.querySelector('.nav');
-
-// button.addEventListener('click', () => {
-//     nav.classList.toggle('active');
-// })
-
 document.querySelector('.hamburguer').addEventListener('click', function() {
     setTimeout(function() {
         document.querySelector('.nav').classList.toggle('active');
@@ -36,3 +29,27 @@ punto.forEach((cadaPunto, i) => {
         punto[i].classList.add('activo');
     })
 });
+
+// JavaScript code
+document.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.querySelectorAll(".link");
+    const nav = document.querySelector(".nav");
+  
+    navLinks.forEach((link) => {
+      link.addEventListener("click", (event) => {
+        event.preventDefault(); // Prevent the default link behavior (scrolling)
+  
+        // Get the target section's ID from the link's href attribute
+        const targetSectionId = link.getAttribute("href");
+  
+        // Scroll to the target section smoothly
+        document.querySelector(targetSectionId).scrollIntoView({
+          behavior: "smooth",
+        });
+  
+        // Close the navigation menu (remove the "active" class)
+        nav.classList.remove("active");
+      });
+    });
+});
+  
