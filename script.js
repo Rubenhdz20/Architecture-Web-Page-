@@ -2,7 +2,7 @@
 
 'use strict'
 
-document.querySelector('.hamburguer').addEventListener('click', function() {
+document.querySelector('.mobile-menu').addEventListener('click', function() {
     setTimeout(function() {
         document.querySelector('.nav').classList.toggle('active');
     }, 100); // 300ms delay for a slow effect

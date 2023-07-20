@@ -65,18 +65,18 @@ main {
         display: inline-block;
         font-size: 1.3rem;
         text-align: wrap; } }
-  .header .hamburguer {
+  .header .mobile-menu {
     display: block;
     color: #000000;
     background-color: #6aa4ef;
     border-radius: 1rem;
     border: none;
     cursor: pointer; }
-    .header .hamburguer .svg {
+    .header .mobile-menu .svg {
       width: 2.5rem;
       height: 2.5rem; }
     @media (min-width: 1064px) {
-      .header .hamburguer {
+      .header .mobile-menu {
         display: none; } }
   .header .nav {
     display: none;
