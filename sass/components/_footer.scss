@@ -32,6 +32,11 @@
                 align-items: center;
                 justify-content: center;
                 margin-top: 2rem;
+
+                img {
+                    border-radius: 11px;
+                }
+                
                 & a {
                     text-decoration: none;
                     .cta--media__redirection {

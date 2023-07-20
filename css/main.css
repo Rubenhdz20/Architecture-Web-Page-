@@ -47,7 +47,7 @@ main {
       height: 50rem; } }
   @media (min-width: 1064px) {
     .hero-section__image {
-      height: 70rem; } }
+      height: 80rem; } }
 
 .header {
   width: 100%;
@@ -342,6 +342,8 @@ main {
         align-items: center;
         justify-content: center;
         margin-top: 2rem; }
+        .cta--container .cta--media__links img {
+          border-radius: 11px; }
         .cta--container .cta--media__links a {
           text-decoration: none; }
           .cta--container .cta--media__links a .cta--media__redirection {
