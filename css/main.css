@@ -25,7 +25,7 @@ main {
   font-family: "Roboto Condensed";
   font-size: 1.7rem;
   text-align: center;
-  color: #000000; }
+  color: #ffff; }
   @media (min-width: 576px) {
     .hero-section h1 {
       font-size: 2rem; } }
@@ -56,8 +56,8 @@ main {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  color: #000000;
-  background-color: #6aa4ef; }
+  color: #ffff;
+  background-color: #444444; }
   .header h1 {
     font-family: "Roboto Condensed"; }
     @media (min-width: 1064px) {
@@ -67,8 +67,8 @@ main {
         text-align: wrap; } }
   .header .mobile-menu {
     display: block;
-    color: #000000;
-    background-color: #6aa4ef;
+    color: #ffff;
+    background-color: #444444;
     border-radius: 1rem;
     border: none;
     cursor: pointer; }
@@ -95,7 +95,7 @@ main {
           font-family: "Roboto Flex";
           font-size: 1rem;
           text-decoration: none;
-          color: #000000;
+          color: #ffff;
           font-weight: bold; }
           .header .nav ul .li .link:hover {
             background-color: #9ac4fc; }
@@ -121,7 +121,7 @@ main {
 
 .description {
   padding-top: 4rem;
-  background-color: #fffdfc; }
+  background-color: #565555; }
   @media (min-width: 576px) {
     .description {
       padding-top: 6rem; } }
@@ -130,7 +130,7 @@ main {
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
-    color: #000000; }
+    color: #ffff; }
   .description .image-gallery {
     height: 25rem;
     display: flex;
@@ -174,7 +174,7 @@ main {
     font-family: "Roboto Flex";
     font-size: 1.3rem;
     text-align: center;
-    color: #000000; }
+    color: #ffff; }
     @media (min-width: 576px) {
       .description__text {
         font-size: 1.5rem; } }
@@ -182,25 +182,25 @@ main {
 .our-services {
   padding-top: 9rem;
   padding-bottom: 7rem;
-  background-color: #fffdfc; }
+  background-color: #565555; }
   .our-services h2 {
     margin-bottom: 2rem;
     font-family: 'Roboto Condensed';
     font-size: 2rem;
     text-align: center;
-    color: #000000; }
+    color: #ffff; }
   .our-services .services {
     width: 20rem;
     height: 22rem;
     margin: 1rem auto;
     padding: 1rem;
-    background-color: #6aa4ef;
+    background-color: #444444;
     border-radius: 1rem; }
     .our-services .services h3 {
       font-size: 1.5rem;
       text-align: center;
       font-family: "Roboto Condensed";
-      color: #000000; }
+      color: #ffff; }
     .our-services .services .services__image-container {
       display: flex;
       padding: 2rem; }
@@ -214,7 +214,7 @@ main {
       font-family: "Roboto Flex";
       font-size: 1rem;
       text-align: center;
-      color: #000000; }
+      color: #ffff; }
       @media (min-width: 576px) {
         .our-services .services__description {
           font-size: 1.3rem; } }
@@ -226,19 +226,19 @@ main {
 .our-work {
   padding-top: 5rem;
   padding-bottom: 7rem;
-  background-color: #fffdfc; }
+  background-color: #565555; }
   .our-work h2 {
     margin-bottom: 2rem;
     font-family: "Roboto Condensed";
     font-size: 2rem;
     text-align: center;
-    color: #000000; }
+    color: #ffff; }
   .our-work .carrusel {
     max-width: 22rem;
     margin: 0 auto;
     padding: 2em;
     border-radius: 1rem;
-    background-color: #6aa4ef;
+    background-color: #444444;
     overflow: hidden; }
     .our-work .carrusel .grande {
       width: 400%;
@@ -253,7 +253,7 @@ main {
         font-size: 1.2rem;
         font-family: "Roboto Condensed";
         text-align: center;
-        color: #000000; }
+        color: #ffff; }
       .our-work .carrusel .grande img {
         width: 18rem;
         height: 18rem;
@@ -280,14 +280,14 @@ main {
 
 .main-container {
   width: 100%;
-  background-color: #6aa4ef; }
+  background-color: #292929f0; }
   .main-container .goback-button {
     display: inline-block;
     width: 3rem;
     height: 3rem;
     margin-left: 2rem;
     margin-top: 1.5rem;
-    background-color: #71b1f2;
+    background-color: #747474;
     text-decoration: none;
     border-radius: 2rem; }
   .main-container .project-name {
@@ -296,13 +296,14 @@ main {
     font-size: 1.5rem;
     text-align: center;
     text-transform: uppercase;
-    color: #000000; }
-  .main-container .description {
+    color: white; }
+  .main-container .project-description {
+    margin-top: 3rem;
     margin-bottom: 2rem;
     font-family: "Roboto Flex";
     font-size: 1rem;
     text-align: center;
-    background-color: #6aa4ef; }
+    color: white; }
   .main-container .projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -317,8 +318,8 @@ main {
 .cta {
   margin: 0 auto;
   padding: 1.6rem 1.6rem;
-  color: #000000;
-  background-color: #6aa4ef; }
+  color: #ffff;
+  background-color: #444444; }
   .cta.light {
     color: black;
     background-color: white; }
@@ -351,11 +352,12 @@ main {
             font-size: 1.2rem;
             line-height: 1;
             border: none;
-            color: #000000; }
-            .cta--container .cta--media__links a .cta--media__redirection.light {
-              color: black; }
+            color: #ffff;
+            /*&.light {
+                            color: black;
+                        }*/ }
             .cta--container .cta--media__links a .cta--media__redirection:hover, .cta--container .cta--media__links a .cta--media__redirection:active {
-              color: #130F40; }
+              color: #000000; }
   .cta--credits {
     margin-top: 6rem;
     font-size: .5rem;
