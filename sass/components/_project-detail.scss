@@ -34,13 +34,24 @@
 
     .projects-container {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
         place-items: center;
         img {
             width: 17rem;
             height: 17rem;
             padding: 1rem;
             border-radius: 3rem;
+        }
+        @include media(sm) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @include media(md) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @include media(lg) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @include media(xl) {
+            grid-template-columns: 1fr 1fr 1fr;
         }
     }
 }   
