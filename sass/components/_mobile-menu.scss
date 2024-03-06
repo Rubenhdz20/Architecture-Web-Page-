@@ -11,7 +11,12 @@
     h1 {
         font-family: $title-source;
 
-        @include media(desktop) {
+        @include media(lg) {
+            display: inline-block;
+            font-size: 1.3rem; 
+            text-align: wrap;
+        } 
+        @include media(xl) {
             display: inline-block;
             font-size: 1.3rem; 
             text-align: wrap;
@@ -30,9 +35,12 @@
             height: 2.5rem;
         }
 
-        @include media(desktop) {
+        @include media(lg) {
             display: none;
         }  
+        @include media(xl) {
+            display: none;
+        } 
     }
 
     .nav { 
@@ -59,18 +67,30 @@
                     }
                 }
 
-                @include media(desktop) {
+                @include media(lg) {
+                    padding: .5rem;
+                    cursor: pointer;   
+                }
+                @include media(xl) {
                     padding: .5rem;
                     cursor: pointer;   
                 }
             }
 
-            @include media(desktop) {
+            @include media(lg) {
+                flex-direction: row; 
+            } 
+            @include media(xl) {
                 flex-direction: row; 
             } 
         }
 
-        @include media(desktop) {
+        @include media(lg) {
+            display: flex;
+            justify-content: flex-end;
+            opacity: 1;
+        } 
+        @include media(xl) {
             display: flex;
             justify-content: flex-end;
             opacity: 1;
@@ -83,7 +103,10 @@
         opacity: 1;
     }
 
-    @include media(desktop) {
+    @include media(lg) {
+        flex-flow: row;
+    }
+    @include media(xl) {
         flex-flow: row;
     }
 }
